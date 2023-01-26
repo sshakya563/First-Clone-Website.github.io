@@ -70,7 +70,7 @@ ul {
 
 .top-banner {
   background-color: #e74694;
-  background-image: url(./img/5b7e4d7973addf81ed1f4010_pattern.png);
+  background-image: url(../img/5b7e4d7973addf81ed1f4010_pattern.png);
   background-size: 300px;
 }
 .small-bold-text {
@@ -172,7 +172,7 @@ header {
 
 .feature_section {
   padding: 30px var(--padding-inlibne-section);
-  background-image: url(img/5af9951ea9b84ec337b92251_Oval2.svg);
+  background-image: url(../img/5af9951ea9b84ec337b92251_Oval2.svg);
   background-position: center;
   background-size: auto 90%;
   background-repeat: no-repeat;
@@ -241,7 +241,7 @@ header {
   width: 23%;
   position: relative;
 
-  background-image: url(./img/asset\ 36.jpeg);
+  background-image: url(../img/asset\ 36.jpeg);
   background-size: cover;
   min-height: 300px;
   transition: 0.2s ease-out;
@@ -259,7 +259,7 @@ header {
   letter-spacing: -0.6px;
 }
 .example-card:nth-child(2) {
-  background-image: url(img/asset\ 37.jpeg);
+  background-image: url(../img/asset\ 37.jpeg);
   background-size: cover;
 }
 .example-card:nth-child(3) {
@@ -267,7 +267,7 @@ header {
   background-size: cover;
 }
 .example-card:nth-child(4) {
-  background-image: url(/img/asset\ 39.jpeg);
+  background-image: url(../img/asset\ 39.jpeg);
   background-size: cover;
 }
 
@@ -311,7 +311,7 @@ header {
                     /* CTA Right-side */
 
 .cta-right {
-  background-image: url(img/asset\ 40.png);
+  background-image: url(../img/asset\ 40.png);
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--secondary-text-color);
@@ -321,7 +321,7 @@ header {
   width: 500px;
   min-height: 500px;
   justify-content: center;
-  background-image: url(img/asset\ 41.png);
+  background-image: url(../img/asset\ 41.png);
 
   background-repeat: no-repeat;
 
