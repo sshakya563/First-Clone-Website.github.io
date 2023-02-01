@@ -48,7 +48,7 @@ a {
   max-width: 1180px;
   padding-inline: var(--padding-inlibne-section);
   margin-inline: auto;
-  
+  border:  2px solid red;
 }
 
 ul {
@@ -152,10 +152,13 @@ header {
   margin-top: 20px;
 }
 .header_right img {
-  width: 586px;
+  width: 400px;
 }
 
                     /* Company Section */
+.company_section{
+  padding: 30px var(--padding-inlibne-section);
+}
 .company_text {
   text-align: center;
   color: var(--primary-text-color);
@@ -203,7 +206,7 @@ header {
 
                     /* Big-Feature- */
 
-.big-feature {
+.big-feature-section {
   padding: 30px var(--padding-inlibne-section) 0;
 }
 .big-feature-conatiner {
@@ -216,7 +219,7 @@ header {
 .feature-description {
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 5px;
 }
 .big-feature-conatiner:nth-child(2) {
   flex-direction: row-reverse;
@@ -296,10 +299,12 @@ header {
   justify-content: space-between;
   gap: 30px;
   font-size: 14px;
+  margin-top: 10px;
 }
 .panel-list ul {
   color: var(--secondary-text-color);
   list-style: square;
+  margin-top: 10px;
 }
 
 .underline {
@@ -307,7 +312,10 @@ header {
   border-width: 1px;
   color: var(--secondary-text-color);
 }
-
+ .cta-section h1 p h4,.cta_btn
+ {
+  margin-top: 20px;
+}
                     /* CTA Right-side */
 
 .cta-right {
@@ -395,3 +403,94 @@ header {
 .subfooter-mediaLinks img {
   width: 15px;
 }
+
+/* Media Query max-width 1024px */
+@media screen and (max-width: 1024px) {
+  /* Nav-bar change */
+}
+@media screen and (max-width: 991px) {
+  /* Header-section */
+  .header-section {
+    flex-direction: column-reverse;
+  }
+  .header_left {
+    max-width: none;
+    text-align: center;
+  }
+  .header_left h1 {
+    font-size: 41px;
+  }
+  .header-section a {
+    display: block;
+    margin-inline: auto;
+  }
+  .header-section p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* company section */
+
+  .logos {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  /* Feature Section */
+  /* NO Changes required */
+
+  /* Big Feature */
+
+  .big-feature-conatiner {
+    flex-direction: column;
+  }
+
+  /* Example */
+  .example-header h2 {
+    text-align: center;
+  }
+  
+
+  /* CTA section */
+  .cta-container {
+    flex-direction: column-reverse;
+  }
+  .cta-left {
+    text-align: center;
+    align-items: center;
+  }
+  .cta_btn {
+    display: block;
+  }
+  .panel-list {
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  /* CTS-section2 */
+  /* Not required  */
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-links
+  h4,
+  ul,
+  li {
+    text-align: center;
+  }
+
+  /* Sub-footer */
+  .subfooter-container {
+    flex-wrap: wrap;
+  }
+}
+
