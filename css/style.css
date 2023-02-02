@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
 
-                    /* Default reset */
+/* Default reset */
 * {
   margin: 0;
   padding: 0;
@@ -42,13 +42,13 @@ a {
   text-decoration: none;
 }
 
-                    /* Utility Class */
+/* Utility Class */
 
 .container {
   max-width: 1180px;
   padding-inline: var(--padding-inlibne-section);
   margin-inline: auto;
-  
+  border: 2px solid red;
 }
 
 ul {
@@ -66,7 +66,7 @@ ul {
   color: var(--accent-color);
 }
 
-                    /* Top-banner */
+/* Top-banner */
 
 .top-banner {
   background-color: #e74694;
@@ -83,7 +83,7 @@ ul {
   padding: 15px 30px;
 }
 
-                    /* Nav-bar-image-logo */
+/* Nav-bar-image-logo */
 
 .main-navbar {
   margin-top: 20px; /*space b/w two items in flex*/
@@ -91,10 +91,9 @@ ul {
 }
 .company-logo img {
   width: 200px;
-  
 }
 
-                    /*Nav-bar-links */
+/*Nav-bar-links */
 
 .nav_links ul {
   justify-content: end;
@@ -131,7 +130,7 @@ ul {
   color: var(--accent-color) !important;
 }
 
-                    /* Header  */
+/* Header  */
 
 header {
   padding: 30px var(--padding-inlibne-section);
@@ -155,8 +154,8 @@ header {
   width: 400px;
 }
 
-                    /* Company Section */
-.company_section{
+/* Company Section */
+.company_section {
   padding: 30px var(--padding-inlibne-section);
 }
 .company_text {
@@ -171,7 +170,7 @@ header {
   width: 100px;
 }
 
-                    /* Feature Section */
+/* Feature Section */
 
 .feature_section {
   padding: 30px var(--padding-inlibne-section);
@@ -189,7 +188,7 @@ header {
   margin-block: 20px;
 }
 
-                    /* Feature Card */
+/* Feature Card */
 
 .feature-area {
   padding: 30px var(--padding-inlibne-section);
@@ -204,7 +203,7 @@ header {
   max-width: 30%; /* Its used for card-width*/
 }
 
-                    /* Big-Feature- */
+/* Big-Feature- */
 
 .big-feature-section {
   padding: 30px var(--padding-inlibne-section) 0;
@@ -225,7 +224,7 @@ header {
   flex-direction: row-reverse;
 }
 
-                    /* Example Section */
+/* Example Section */
 
 .example-section {
   padding: 30px var(--padding-inlibne-section) 0;
@@ -274,20 +273,20 @@ header {
   background-size: cover;
 }
 
-                    /* CTA Section */
+/* CTA Section */
 
 .cta-section {
+  padding: 30px var(--padding-inlibne-section) 0;
   margin-block: 50px;
-  padding: 50px var(--padding-inlibne-section);
   background-color: var(--primary-text-color);
 }
 .cta-container {
   justify-content: space-between;
-  gap: 50px;
+  gap: 5px;
   align-items: flex-start;
 }
 
-                    /* CTA Left-side */
+/* CTA Left-side */
 
 .cta-left {
   flex-direction: column;
@@ -297,9 +296,10 @@ header {
 }
 .panel-list {
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
   font-size: 14px;
   margin-top: 10px;
+  padding-inline: 20px;
 }
 .panel-list ul {
   color: var(--secondary-text-color);
@@ -312,29 +312,32 @@ header {
   border-width: 1px;
   color: var(--secondary-text-color);
 }
- .cta-section h1 p h4,.cta_btn
- {
+.oneliner {
   margin-top: 20px;
 }
-                    /* CTA Right-side */
-
-.cta-right {
-  background-image: url(../img/asset\ 40.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--secondary-text-color);
+.cta-section h1 p h4,
+.cta_btn {
+  margin-top: 20px;
 }
-.pannel-image {
+/* CTA Right-side */
+.image-container {
+  position: relative;
+}
+.img1 {
+  width: 525px;
+}
+.img2 {
+  position: absolute;
+  left: 179px;
+  top: 152px;
+  width: 200px;
+}
+.pannel-text {
+  position: absolute;
   flex-direction: column;
-  width: 500px;
-  min-height: 500px;
+  left: 237px;
+  top: 187px;
   justify-content: center;
-  background-image: url(../img/asset\ 41.png);
-
-  background-repeat: no-repeat;
-
-  background-size: 215px 225px;
-  background-position: center;
 }
 .price {
   margin-right: 8px;
@@ -345,10 +348,10 @@ header {
   font-weight: 600;
 }
 
-                    /* CTA Section-2 */
+/* CTA Section-2 */
 
 .cta-section2 {
-  padding: 50px var(--padding-inlibne-section);
+  padding: 30px var(--padding-inlibne-section);
 }
 .cta-section2-container {
   flex-direction: column;
@@ -356,32 +359,31 @@ header {
   text-align: center;
 }
 
-                    /* Footer Section */
+/* Footer Section */
 .footer {
   background-color: #ebf2fa;
-  padding: 50px var(--padding-inlibne-section);
+  padding: 30px var(--padding-inlibne-section);
 }
 .footer-container {
-  gap: 145px;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
-.footer-image img {
+.footer-container img {
   width: 200px;
 }
-.footer-links {
-  gap: 50px;
+.link-column {
+  gap: 10px;
   align-items: flex-start;
-}
-.footer-links h4 {
-  padding-bottom: 10px;
-}
-.footer-links a {
-  color: var(--secondary-text-color);
-  font-size: 13px;
+  flex-direction: column;
 }
 
-                    /* SubFooter Section */
+.link-column a {
+  color: var(--secondary-text-color);
+  /* font-size: 13px; */
+}
+
+/* SubFooter Section */
 
 .subfooter {
   padding: 20px var(--padding-inlibne-section);
@@ -390,17 +392,9 @@ header {
 .subfooter-container {
   justify-content: center;
   gap: 30px;
-}
-.subfooter-textLinks {
-  gap: 30px;
   font-size: 12px;
 }
-
-.subfooter-mediaLinks {
-  gap: 30px;
-}
-
-.subfooter-mediaLinks img {
+.subfooter-container img {
   width: 15px;
 }
 
@@ -450,7 +444,6 @@ header {
   .example-header h2 {
     text-align: center;
   }
-  
 
   /* CTA section */
   .cta-container {
@@ -477,20 +470,16 @@ header {
     align-items: center;
     gap: 20px;
   }
-  .footer-links {
+  .link-column {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
-  .footer-links
-  h4,
-  ul,
-  li {
-    text-align: center;
-  }
+ 
 
   /* Sub-footer */
   .subfooter-container {
     flex-wrap: wrap;
+    
   }
 }
-
