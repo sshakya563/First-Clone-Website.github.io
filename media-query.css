@@ -67,13 +67,14 @@
     /* CTA section */
     .cta-container {
       flex-direction: column-reverse;
-    }
+          }
     .cta-left {
       text-align: center;
       align-items: center;
     }
     .cta_btn {
       display: block;
+      
     }
     .panel-list {
       justify-content: space-around;

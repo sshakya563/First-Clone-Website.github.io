@@ -329,8 +329,9 @@ header {
 }
 .cta-section h1 p h4,
 .cta_btn {
-  margin-top: 20px;
+  margin-block: 20px;
 }
+
 
 /* CTA Right-side */
 
