@@ -273,7 +273,7 @@ header {
 }
 
 .examples-card:nth-child(4) {
-  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/img/asset\ 39.jpeg);
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(../img/asset\ 39.jpeg);
   background-size: cover;
 }
 
