@@ -233,7 +233,8 @@ header {
 /*  Example Section */
 
 .examples-section {
-  padding: 80px var(--padding-inline-section)
+  padding: 80px var(--padding-inline-section);
+  margin-top: 20px;  
 }
 
 .examples-header {
