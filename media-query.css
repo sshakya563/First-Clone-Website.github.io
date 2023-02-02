@@ -1,0 +1,105 @@
+/* Media Query max-width 1024px */
+@media screen and (max-width: 991px) {
+    /* Nav-bar change */
+    .nav-toggle{
+        display: block;
+        margin: 20px;
+    }
+    .nav_links{
+        display: none;
+    }
+      /* Example */
+      .examples-area{
+        gap: 20px;
+      }
+     .examples-card{
+        width:calc(50% - 10px);
+        
+    }
+  
+  
+  
+  
+  
+  }
+  @media screen and (max-width: 767px) {
+    /* Header-section */
+    .header-section {
+      flex-direction: column-reverse;
+    }
+    .header_left {
+      max-width: none;
+      text-align: center;
+    }
+    .header_left h1 {
+      font-size: 41px;
+    }
+    .header-section a {
+      display: block;
+      margin-inline: auto;
+    }
+    .header-section p {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    /* company section */
+  
+    .logos {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-around;
+    }
+  
+    /* Feature Section */
+    /* NO Changes required */
+  
+    /* Big Feature */
+  
+    .big-feature-conatiner {
+      flex-direction: column;
+    }
+  
+   
+   
+    
+  
+    /* CTA section */
+    .cta-container {
+      flex-direction: column-reverse;
+    }
+    .cta-left {
+      text-align: center;
+      align-items: center;
+    }
+    .cta_btn {
+      display: block;
+    }
+    .panel-list {
+      justify-content: space-around;
+      gap: 20px;
+    }
+  
+    /* CTS-section2 */
+    /* Not required  */
+  
+    /* Footer */
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .link-column {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+   
+  
+    /* Sub-footer */
+    .subfooter-container {
+      flex-wrap: wrap;
+      
+    }
+  }
+  

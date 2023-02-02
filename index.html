@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Websites</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="media-query.css">
 </head>
 
 <body>
@@ -24,28 +26,29 @@
   <nav>
     <div class="container main-navbar flex">
       <a href="javascript:void(0)" class="company-logo">
-        <img src="img/asset 1.png" alt="company-logo" />
+        <img src="../img/asset 1.png" alt="company-logo" />
       </a>
-      <div class="nav_links">
+      <div class="nav_links" id="nav-links">
         <ul class="flex">
-          <li>
-            <a href="javascript:void(0)" class="hover_link">Products</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)" class="hover_link">Customer</a>
+          <li><a href="javascript:void(0)" class="hover_link">Products</a></li>
+          <li><a href="javascript:void(0)" class="hover_link">Customer</a>
           </li>
           <li><a href="javascript:void(0)" class="hover_link">Pricing</a></li>
           <li><a href="javascript:void(0)" class="hover_link">Resoces</a></li>
-          <li>
-            <a href="javascript:void(0)" class="hover_link secondary_button">Sign in</a>
+          <li><a href="javascript:void(0)" class="hover_link secondary_button">Sign in</a>
           </li>
-          <li>
-            <a href="javascript:void(0)" class="hover_link primary_button">Sign up</a>
+          <li> <a href="javascript:void(0)" class="hover_link primary_button">Sign up</a>
           </li>
         </ul>
       </div>
+      <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+        <i class="fa fa-bars"></i></a>
     </div>
+
+
   </nav>
+
+
   <!-- Header Secction-->
 
   <header>
@@ -64,6 +67,7 @@
       </div>
     </div>
   </header>
+
   <!-- Company section -->
 
   <div class="company_section">
@@ -95,37 +99,37 @@
       </div>
       <div class="feature-area flex">
         <div class="feature-card flex">
-          <img src="img/asset 11.svg" alt="NA" />
+          <img src="img/asset 11.svg" class="card-img" alt="NA" />
           <p>Discover how people group and label information.</p>
           <a href="javascript:void(0)" class="secondary_button">Learn more <img src="img/asset 10.svg"
               alt="right-arrow" /></a>
         </div>
         <div class="feature-card flex">
-          <img src="img/asset 13.svg" alt="NA" />
+          <img src="img/asset 13.svg" class="card-img" alt="NA" />
           <p>Discover how people navigate your Figma prototypes.</p>
           <a href="javascript:void(0)" class="secondary_button">Learn more <img src="img/asset 10.svg"
               alt="right-arrow" /></a>
         </div>
         <div class="feature-card flex">
-          <img src="img/asset 14.svg" alt="NA" />
+          <img src="img/asset 14.svg" class="card-img" alt="NA" />
           <p>Test interaction with first click and navigation tests.</p>
           <a href="javascript:void(0)" class="secondary_button">Learn more <img src="img/asset 10.svg"
               alt="right-arrow" /></a>
         </div>
         <div class="feature-card flex">
-          <img src="img/asset 15.svg" alt="NA" />
+          <img src="img/asset 15.svg" class="card-img" alt="NA" />
           <p>Get feedback on images, videos or audio files.</p>
           <a href="javascript:void(0)" class="secondary_button">Learn more <img src="img/asset 10.svg"
               alt="right-arrow" /></a>
         </div>
         <div class="feature-card flex">
-          <img src="img/asset 16.svg" alt="NA" />
+          <img src="img/asset 16.svg" class="card-img" alt="NA" />
           <p>Find out which designs users prefer and why.</p>
           <a href="javascript:void(0)" class="secondary_button">Learn more <img src="img/asset 10.svg"
               alt="right-arrow" /></a>
         </div>
         <div class="feature-card flex">
-          <img src="img/asset 17.svg" alt="NA" />
+          <img src="img/asset 17.svg" class="card-img" alt="NA" />
           <p>Test comprehensibility by measuring first impressions.</p>
           <a href="javascript:void(0)" class="secondary_button">Learn more <img src="img/asset 10.svg"
               alt="right-arrow" /></a>
@@ -133,6 +137,7 @@
       </div>
     </div>
   </section>
+
   <!-- Big Feature Section -->
 
   <section class="big-feature-section">
@@ -184,37 +189,30 @@
 
   <!-- Example-section -->
 
-  <section class="example-section">
+  <section class="examples-section">
     <div class="container">
-      <div class="example-header flex">
-        <h2>One platform, endless possibilities</h2>
-        <a href="javascript:void(0)" class="secondary_button">See more example <img src="img/asset 10.svg"
-            alt="right-arrow" /></a>
-      </div>
-      <div class="example-area flex">
-        <a href="javascript:void(0)" class="example-card">
-          <h3 class="example-text">
-            Can users complete a task in my software interface?
-          </h3>
-        </a>
-        <a href="javascript:void(0)" class="example-card">
-          <h3 class="example-text">
-            Can users find important pages on my website?
-          </h3>
-        </a>
-        <a href="javascript:void(0)" class="example-card">
-          <h3 class="example-text">
-            Is my website’s intended audience clear?
-          </h3>
-        </a>
-        <a href="javascript:void(0)" class="example-card">
-          <h3 class="example-text">
-            Do visitors understand what a page is about?
-          </h3>
-        </a>
-      </div>
+        <div class="examples-header flex">
+            <h2 class="examples-heading-text">One platform, endless possibilities</h2>
+            <a href="#" class="secondary_button">See more examples <img src="img/asset 10.svg"
+              alt="right-arrow" /></a>
+        </div>
+        <div class="examples-area flex">
+            <a href="#" class="examples-card">
+                <h3 class="card-text">Can user complete a task in my software interface?</h3>
+            </a>
+            <a class="examples-card" href="#">
+                <h3 class="card-text">Can users find important pages on my website?</h3>
+            </a>
+            <a class="examples-card" href="#">
+                <h3 class="card-text">Is my website’s intended audience clear? </h3>
+            </a>
+            <a class="examples-card" href="#">
+                <h3 class="card-text">Do visitors understand what a page is about?</h3>
+            </a>
+        </div>
     </div>
-  </section>
+</section>
+
   <!-- CTA section -->
 
   <section class="cta-section">
@@ -328,5 +326,7 @@
       </div>
     </div>
   </section>
+  
 </body>
+
 </html>

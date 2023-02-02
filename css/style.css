@@ -48,7 +48,7 @@ a {
   max-width: 1180px;
   padding-inline: var(--padding-inlibne-section);
   margin-inline: auto;
-  border: 2px solid red;
+  overflow: hidden;
 }
 
 ul {
@@ -102,6 +102,9 @@ ul {
 
 .nav_links {
   flex-basis: 730px;
+}
+.nav-toggle{
+  display: none;
 }
 
 .primary_button {
@@ -202,6 +205,9 @@ header {
   text-align: center;
   max-width: 30%; /* Its used for card-width*/
 }
+.feature-card .card-img{
+  width: 60px;
+}
 
 /* Big-Feature- */
 
@@ -224,53 +230,58 @@ header {
   flex-direction: row-reverse;
 }
 
-/* Example Section */
+/*  Example Section */
 
-.example-section {
-  padding: 30px var(--padding-inlibne-section) 0;
+.examples-section {
+  padding: 80px var(--padding-inline-section)
 }
-.example-header {
+
+.examples-header {
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 
-.example-area {
+.examples-area {
   justify-content: space-between;
   margin-block: 30px;
+  flex-wrap: wrap;
 }
 
-.example-card {
+.examples-card {
   width: 23%;
   position: relative;
-
-  background-image: url(../img/asset\ 36.jpeg);
+  height: 300px;
+  background: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(../img/asset\ 36.jpeg);
   background-size: cover;
-  min-height: 300px;
   transition: 0.2s ease-out;
 }
-.example-card:hover {
+
+.examples-card:hover {
   box-shadow: 0 0 10px #888;
 }
-.example-area h3 {
+.examples-card:nth-child(2){
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(../img/asset\ 37.jpeg); 
+  background-size: cover;
+}
+
+.examples-card:nth-child(3) {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(../img/asset\ 38.jpeg);
+  background-size: cover;
+}
+
+.examples-card:nth-child(4) {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/img/asset\ 39.jpeg);
+  background-size: cover;
+}
+
+.card-text {
   position: absolute;
   bottom: 20px;
   left: 20px;
   right: 20px;
-  color: #fff;
-  font-size: 19px;
-  letter-spacing: -0.6px;
-}
-.example-card:nth-child(2) {
-  background-image: url(../img/asset\ 37.jpeg);
-  background-size: cover;
-}
-.example-card:nth-child(3) {
-  background-image: url(../img/asset\ 38.jpeg);
-  background-size: cover;
-}
-.example-card:nth-child(4) {
-  background-image: url(../img/asset\ 39.jpeg);
-  background-size: cover;
+  color: white;
 }
 
 /* CTA Section */
@@ -319,7 +330,9 @@ header {
 .cta_btn {
   margin-top: 20px;
 }
+
 /* CTA Right-side */
+
 .image-container {
   position: relative;
 }
@@ -398,88 +411,3 @@ header {
   width: 15px;
 }
 
-/* Media Query max-width 1024px */
-@media screen and (max-width: 1024px) {
-  /* Nav-bar change */
-}
-@media screen and (max-width: 991px) {
-  /* Header-section */
-  .header-section {
-    flex-direction: column-reverse;
-  }
-  .header_left {
-    max-width: none;
-    text-align: center;
-  }
-  .header_left h1 {
-    font-size: 41px;
-  }
-  .header-section a {
-    display: block;
-    margin-inline: auto;
-  }
-  .header-section p {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  /* company section */
-
-  .logos {
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-around;
-  }
-
-  /* Feature Section */
-  /* NO Changes required */
-
-  /* Big Feature */
-
-  .big-feature-conatiner {
-    flex-direction: column;
-  }
-
-  /* Example */
-  .example-header h2 {
-    text-align: center;
-  }
-
-  /* CTA section */
-  .cta-container {
-    flex-direction: column-reverse;
-  }
-  .cta-left {
-    text-align: center;
-    align-items: center;
-  }
-  .cta_btn {
-    display: block;
-  }
-  .panel-list {
-    justify-content: space-around;
-    gap: 20px;
-  }
-
-  /* CTS-section2 */
-  /* Not required  */
-
-  /* Footer */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .link-column {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
- 
-
-  /* Sub-footer */
-  .subfooter-container {
-    flex-wrap: wrap;
-    
-  }
-}
