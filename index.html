@@ -156,11 +156,11 @@
     </div>
   </section>
   <section class="big-feature-section">
-    <div class="container big-feature-conatiner flex">
+    <div class="container big-feature-conatiner flex" id="second-big-feature">
       <div class="feature-image">
         <img src="img/asset 21.png" alt="marketers" />
       </div>
-      <div class="feature-description flex">
+      <div class="feature-description flex" >
         <h4>Optimisation for</h4>
         <h3>Marketers</h3>
         <p>
@@ -172,7 +172,7 @@
     </div>
   </section>
   <section class="big-feature-section">
-    <div class="container big-feature-conatiner flex">
+    <div class="container big-feature-conatiner flex ">
       <div class="feature-image">
         <img src="img/asset 24.png" alt="ProductManager" />
       </div>
@@ -190,28 +190,27 @@
   <!-- Example-section -->
 
   <section class="examples-section">
-    <div class="container">
-        <div class="examples-header flex">
-            <h2 class="examples-heading-text">One platform, endless possibilities</h2>
-            <a href="#" class="secondary_button">See more examples <img src="img/asset 10.svg"
-              alt="right-arrow" /></a>
-        </div>
-        <div class="examples-area flex">
-            <a href="#" class="examples-card">
-                <h3 class="card-text">Can user complete a task in my software interface?</h3>
-            </a>
-            <a class="examples-card" href="#">
-                <h3 class="card-text">Can users find important pages on my website?</h3>
-            </a>
-            <a class="examples-card" href="#">
-                <h3 class="card-text">Is my website’s intended audience clear? </h3>
-            </a>
-            <a class="examples-card" href="#">
-                <h3 class="card-text">Do visitors understand what a page is about?</h3>
-            </a>
-        </div>
+    <div class="container examples-section-container">
+      <div class="examples-header flex">
+        <h2 class="examples-heading-text">One platform, endless possibilities</h2>
+        <a href="#" class="secondary_button">See more examples <img src="img/asset 10.svg" alt="right-arrow" /></a>
+      </div>
+      <div class="examples-area flex">
+        <a href="#" class="examples-card">
+          <h3 class="card-text">Can user complete a task in my software interface?</h3>
+        </a>
+        <a class="examples-card" href="#">
+          <h3 class="card-text">Can users find important pages on my website?</h3>
+        </a>
+        <a class="examples-card" href="#">
+          <h3 class="card-text">Is my website’s intended audience clear? </h3>
+        </a>
+        <a class="examples-card" href="#">
+          <h3 class="card-text">Do visitors understand what a page is about?</h3>
+        </a>
+      </div>
     </div>
-</section>
+  </section>
 
   <!-- CTA section -->
 
@@ -260,6 +259,7 @@
       </div>
     </div>
   </section>
+
   <!-- CTA section-2 -->
 
   <section class="cta-section2">
@@ -326,7 +326,17 @@
       </div>
     </div>
   </section>
-  
+
+  <script>
+     const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+
+  </script>
+
 </body>
 
 </html>

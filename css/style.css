@@ -12,7 +12,7 @@
   --secondary-text-color: #577592;
   --accent-color: #2294ed;
   --accent-color-dark: #1d69a3;
-  --padding-inlibne-section: 20px;
+  --padding-inline-section: 20px;
 }
 
 body {
@@ -46,9 +46,10 @@ a {
 
 .container {
   max-width: 1180px;
-  padding-inline: var(--padding-inlibne-section);
+  padding-inline: var(--padding-inline-section);
   margin-inline: auto;
   overflow: hidden;
+  /* border: 2px solid red; */
 }
 
 ul {
@@ -88,6 +89,7 @@ ul {
 .main-navbar {
   margin-top: 20px; /*space b/w two items in flex*/
   justify-content: space-between;
+  position: relative;
 }
 .company-logo img {
   width: 200px;
@@ -115,6 +117,7 @@ ul {
   font-weight: 500;
   box-shadow: 0 0 2px var(--secondary-text-color);
   transition: 0.2s ease-out;
+  text-align: center;
 }
 .primary_button:hover {
   background-color: var(--accent-color-dark);
@@ -136,7 +139,7 @@ ul {
 /* Header  */
 
 header {
-  padding: 30px var(--padding-inlibne-section);
+  padding: 30px var(--padding-inline-section);
 }
 .header-section {
   justify-content: center;
@@ -154,12 +157,12 @@ header {
   margin-top: 20px;
 }
 .header_right img {
-  width: 400px;
+  width: 100%;
 }
 
 /* Company Section */
 .company_section {
-  padding: 30px var(--padding-inlibne-section);
+  padding: 30px var(--padding-inline-section);
 }
 .company_text {
   text-align: center;
@@ -167,7 +170,9 @@ header {
   margin-block: 30px;
 }
 .logos {
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .logos img {
   width: 100px;
@@ -176,7 +181,7 @@ header {
 /* Feature Section */
 
 .feature_section {
-  padding: 30px var(--padding-inlibne-section);
+  padding: 30px var(--padding-inline-section);
   background-image: url(../img/5af9951ea9b84ec337b92251_Oval2.svg);
   background-position: center;
   background-size: auto 90%;
@@ -194,10 +199,10 @@ header {
 /* Feature Card */
 
 .feature-area {
-  padding: 30px var(--padding-inlibne-section);
+  padding: 30px var(--padding-inline-section);
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
 .feature-card {
   flex-direction: column;
@@ -212,7 +217,7 @@ header {
 /* Big-Feature- */
 
 .big-feature-section {
-  padding: 30px var(--padding-inlibne-section) 0;
+  padding: 30px var(--padding-inline-section)0;
 }
 .big-feature-conatiner {
   gap: 20px;
@@ -226,15 +231,14 @@ header {
   align-items: flex-start;
   gap: 5px;
 }
-.big-feature-conatiner:nth-child(2) {
+#second-big-feature{
   flex-direction: row-reverse;
 }
 
 /*  Example Section */
 
 .examples-section {
-  padding: 80px var(--padding-inline-section);
-  margin-top: 20px;  
+    padding: 30px var(--padding-inline-section);  
 }
 
 .examples-header {
@@ -288,14 +292,14 @@ header {
 /* CTA Section */
 
 .cta-section {
-  padding: 30px var(--padding-inlibne-section) 0;
+  padding: 30px var(--padding-inline-section) 0;
   margin-block: 50px;
   background-color: var(--primary-text-color);
 }
 .cta-container {
   justify-content: space-between;
   gap: 5px;
-  align-items: flex-start;
+  
 }
 
 /* CTA Left-side */
@@ -320,9 +324,10 @@ header {
 }
 
 .underline {
-  border-style: none none dashed;
-  border-width: 1px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
   color: var(--secondary-text-color);
+  display: block;
 }
 .oneliner {
   margin-top: 20px;
@@ -362,11 +367,12 @@ header {
   line-height: 36px;
   font-weight: 600;
 }
-
 /* CTA Section-2 */
 
 .cta-section2 {
-  padding: 30px var(--padding-inlibne-section);
+  padding:var(--padding-inline-section);
+  margin-block: 30px;
+ 
 }
 .cta-section2-container {
   flex-direction: column;
@@ -375,11 +381,12 @@ header {
 }
 
 /* Footer Section */
-.footer {
+.footer { 
+  padding: 40px var(--padding-inline-section);
   background-color: #ebf2fa;
-  padding: 30px var(--padding-inlibne-section);
 }
 .footer-container {
+  background-color: #ebf2fa;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -401,13 +408,14 @@ header {
 /* SubFooter Section */
 
 .subfooter {
-  padding: 20px var(--padding-inlibne-section);
+  padding: 20px var(--padding-inline-section);
   background-color: #b9cde4;
 }
 .subfooter-container {
   justify-content: center;
   gap: 30px;
   font-size: 12px;
+  flex-wrap: wrap;
 }
 .subfooter-container img {
   width: 15px;
